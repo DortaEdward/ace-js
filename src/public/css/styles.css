@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+  color:white;
+  background-color: rgb(15 23 42);
+  width: 100vw;
+  height: 100vh;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.logo{
+  padding:1rem 2rem;
+  border: 1px solid white;
+  z-index: 1;
+  border-radius: 10px;
+  text-align: center;
+}
+.header p{
+  margin-top: -1.4rem;
+  z-index: 2;
+  background-color: rgb(15 23 42);
+  padding: 0.6rem;
+}
+
+.url-container{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  width: 90%;
+}
+
+.url-card{
+  background: rgba(255,255,255,.2);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.url-content{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.originalUrlText{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.shortenUrlText{
+  font-weight: 400;
+}
+
+.shortenUrlText a:hover{
+  text-decoration: underline;
+}
+
+a{
+  color:rgb(174, 174, 174);
+  text-decoration: none;
+}
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.4rem 0;
+}
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  border:none;
+  justify-content: center;
+}
+button{
+  border: none;
+  background: rgba(255,255,255,.4);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+button:hover{
+  background: rgba(255,255,255,.2);
+  letter-spacing: 0.4rem;
+}
+
+fieldset input, button{
+  height: 3rem;
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+input{
+  border:none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  outline: none;
+
+} 
+
+svg, button{
+  cursor: pointer;
+  transition: ease-in-out all 0.3s;
+}
+
+svg:hover{
+  transform: scale(1.2);
+}
