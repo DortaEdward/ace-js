@@ -9,7 +9,7 @@ const db = require('./db/');
 
 
 const app = express();
-const PORT = process.env.PORT || 5003;
+const PORT = process.env.PORT || 3000;
 
 const { getUrls, createUrl, findUrl } = require('./Url/service');
 require('./db');
